@@ -1,0 +1,40 @@
+@import "uikit-variables";
+@import "uikit-mixins";
+
+// your custom code goes here, e.g. mixins, variables
+
+@import "uikit";
+@import "components/dotnav";
+@import "components/slidenav";
+@import "components/slideshow";
+@import "components/datepicker";
+@import "components/form-select";
+
+// my personal styles
+#footerstyle{
+    background-color: #11BEBE;
+    border-radius: 0px;
+}
+// about block
+#extrastyles{
+  margin-left: 43px;
+  padding-bottom: 25px;  
+  padding-top: 30px;    
+    
+}
+// about form
+#formextrstyle input {
+    background-color:lighten(#E48230, 30%);
+    border-radius: 10px;
+}
+
+#formextrstyle select{
+    background-color:lighten(#256792, 45%);
+    border:1px solid #FF8016;
+    
+}
+#formextrstyle textarea{
+    background-color:lighten(#1D8989, 45%);
+    border:1px solid #1C83C5;
+    border-radius: 5px;
+}

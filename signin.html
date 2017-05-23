@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign in</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/components/datepicker.min.js"></script>
+        
+    </head>
+    <body>
+            <div class="uk-grid">
+            <div class="uk-width-1-1">
+            <nav class="uk-navbar">
+            <a href="#offcanvasbox" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>   
+                <ul class="uk-navbar-nav uk-hidden-small">
+                        <li class="uk-active"><a href="index.html"><i class="uk-icon-home uk-icon-medium"></i>Home</a></li>
+                        <li class="uk-parent" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
+                        <a href="sport.html">Sport</a>
+                         <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" style="top: 40px; left: 0px;" >
+                             <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="#">History</a></li>
+                                                
+                                                <li class="uk-nav-header">Different types</li>
+                                                <li><a href="#">Intensive</a></li>
+                                                <li><a href="#">Relaxing</a></li>
+                                                <li><a href="#">Restorative </a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="signin.html">Sign in</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                            <li class="uk-parent" data-uk-dropdown="" aria-haspopup="true" aria-expanded="false">
+                            <a href="travel.html">Travel</a>
+                            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" style="top: 40px; left: 0px;">
+                             <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="#">Destinations</a></li>
+                                                <li><a href="#">Advice</a></li>
+                                                <li class="uk-nav-header">Galery</li>
+                                                <li><a href="#">Nature</a></li>
+                                                <li><a href="#">Culture</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="signin.html">Sign in</a></li>
+                            </ul>
+                            </div>
+                            </li>
+                 </ul>
+           </nav>
+          </div>
+          </div>
+          
+         
+          
+<!-- form --> 
+<div class="uk-grid uk-grid-medium uk-margin-top uk-margin-bottom uk-margin-left uk-margin-large-right">
+<div class="uk-width-medium-1-1">
+<div class="uk-panel uk-panel-box">          
+<div class="uk-panel-teaser">
+<img src="pictures/road-1.jpg" alt="road">
+</div>                                  
+<form id="formextrstyle" action="#" method="post" class="uk-form uk-form-horizontal">
+<fieldset>
+    <legend>Tell us more about you, please!</legend> 
+         
+          <div class="uk-form-row">      
+                <label class="uk-form-label" for="form-f-name">First name</label>
+                <div class="uk-form-icon">
+                <i class="uk-icon-user"></i>
+                <input id="form-f-name" class="uk-form-large uk-form-width-medium" placeholder="First name" type="text" >
+                </div>
+          </div>
+          
+          
+          <div class="uk-form-row">
+                <label class="uk-form-label" for="form-s-name">Second name</label>
+                <div class="uk-form-icon">
+                <i class="uk-icon-user"></i>
+                <input id="form-s-name" class="uk-form-large uk-form-width-medium" placeholder="Second name" type="text" >
+                </div>
+          </div>
+          
+          
+          <div class="uk-form-row">
+                <label class="uk-form-label" for="form-mail-name">Email</label>
+                <div class="uk-form-icon">
+                <i class="uk-icon-envelope-o"></i>
+                <input id="form-mail-name" class="uk-form-large uk-form-width-medium" placeholder="Email" type="email" >
+                </div>
+          </div>
+ <!-- JavaScript – Datepicker -->         
+          <div class="uk-form-row">
+                <label class="uk-form-label" for="form-mail-name">When is your birthday?</label>
+                <div class="uk-form-icon">
+                <i class="uk-icon-birthday-cake"></i>
+                <input class="uk-form-large uk-form-width-medium" type="text" data-uk-datepicker="{pos: 'bottom', format:'DD.MM.YYYY'}">
+                </div>
+          </div>
+ 
+          
+<fieldset>
+    <legend>Sport</legend>                             
+           <div class="uk-form-row">
+                <label class="uk-form-label" for="form-sport-s">What kind of sport do you want to practice?</label>
+                <div class="uk-form-controls">
+                <select id="form-sport-s" class="uk-form-large uk-form-width-medium">
+                <option>Very intense</option>
+                <option>With more cardio</option>
+                <option>More relaxing</option>
+                <option>Restorative</option>
+                </select>
+                </div>
+          </div>
+          
+          
+          <div class="uk-form-row">
+                <label class="uk-form-label" for="form-sport-t">You have experience with sports? Tell us.</label>
+                <div class="uk-form-controls">
+                <textarea id="form-sport-t" class="uk-form-large uk-form-width-medium" cols="30" rows="5" placeholder="Tell us..."></textarea>
+                </div>
+          </div>
+          
+          
+           <div class="uk-form-row">
+                <span class="uk-form-label">Do you prefer outdoor sport?</span>
+                <div class="uk-form-controls uk-form-controls-text">
+                <input id="form-yes-c"  type="checkbox"> <label for="form-yes-c">Yes!</label><br>       
+                </div>
+          </div>
+         
+
+</fieldset> 
+<fieldset>
+    <legend>Travel</legend>                          
+          <div class="uk-form-row">
+                <span class="uk-form-label">I prefer to travel!</span>
+                <div class="uk-form-controls uk-form-controls-text">
+                <input id="form-y-r" name="radio" type="radio"> <label for="form-y-r">Yes!</label><br>
+                <input id="form-n-r1" name="radio" type="radio"> <label for="form-n-r1">No.</label>      
+                </div>
+        </div>
+        
+        
+         <div class="uk-form-row">
+                <span class="uk-form-label">I want to visit:</span>
+                <div class="uk-form-controls uk-form-controls-text">
+                <input id="form-am-c" type="checkbox"> <label for="form-am-c">Amerika</label><br>
+                <input id="form-eu-c" type="checkbox"> <label for="form-eu-c">Europe</label><br>
+                <input id="form-asia-c" type="checkbox"> <label for="form-asia-c">Asia</label><br>  
+                <input id="form-aus-c" type="checkbox"> <label for="form-aus-c">Australia</label><br>
+                <input id="form-af-c" type="checkbox"> <label for="form-af-c">Africa</label><br>       
+                </div>
+          </div>
+          
+ 
+</fieldset>                   
+          <div class="uk-form-row">
+                <button class="uk-button uk-button-success" type="submit">Submit</button>
+          </div>
+          
+          
+</fieldset>      
+</form>      
+          
+          
+</div>
+</div>          
+</div>          
+          
+          
+        
+<!-- footer -->         
+          <div id="footerstyle" class="uk-panel uk-panel-box uk-width-1-1 ">
+          
+          <footer class="uk-container uk-container-center uk-text-center">
+          <h3 class="uk-panel-title ">
+           Sport and travel
+          </h3>
+          <h3 class="uk-panel-title ">
+           Find us:
+          </h3>
+                            <a href="#" class="uk-icon-button uk-icon-facebook-official"></a>
+                            <a href="#" class="uk-icon-button uk-icon-twitter"></a>
+                            <a href="#" class="uk-icon-button uk-icon-instagram"></a>
+                            <a href="#" class="uk-icon-button uk-icon-youtube"></a>
+          </footer>
+            
+          </div>   
+          
+          
+<!-- off canvas box -->
+
+        <div id="offcanvasbox" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar"> 
+                   <ul class="uk-nav uk-nav-offcanvas">
+                        <li class="uk-active"><a href="index.html"><i class="uk-icon-home uk-icon-small"></i>Home</a></li>
+                        <li class="uk-parent" aria-expanded="true">
+                        <a href="sport.html">Sport</a>
+                             <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="#">History</a></li>
+                                                
+                                                <li class="uk-nav-header">Different types</li>
+                                                <li><a href="#">Intensive</a></li>
+                                                <li><a href="#">Relaxing</a></li>
+                                                <li><a href="#">Restorative </a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="signin.html">Sign in</a></li>
+                            </ul>
+                        </li>
+                            <li class="uk-parent" aria-expanded="true">
+                            <a href="travel.html">Travel</a>
+                             <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="#">Destinations</a></li>
+                                                <li><a href="#">Advice</a></li>
+                                                <li class="uk-nav-header">Galery</li>
+                                                <li><a href="#">Nature</a></li>
+                                                <li><a href="#">Culture</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="signin.html">Sign in</a></li>
+                            </ul>
+                            </li>
+                 </ul>
+                </div>
+        </div>
+    </body>
+</html>
