@@ -10,10 +10,10 @@
 There are many different frameworks. Maybe at this moment the most popular is Bootstrap and I really like it, but this time a decided to try something different. So here I created simple webpage wit UIkit framework.  
 
 ## Details
-What did I used?
+What did I use?
 * The Uikit grid system to lay out the website.
-* Incorporate: panel, block, article, comment, cover, navigation; 
-* Made a form.
+* I implemented: panel, block, article, comment, cover, navigation;
+* I created a form.
 * Some styling:buttons,icons,badges, thumbnail;
 * Some core JavaScript-based widget: dropdown, off-canvas;
 * SASS
