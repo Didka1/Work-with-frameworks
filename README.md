@@ -7,7 +7,7 @@
 * http://healthylife.free.bg/signin.html - Sign in;
 
 ## What is the goal of the project?
-There are many different frameworks. Maybe at this moment the most popular is Bootstrap and I really like it, but this time a decided to try something different. So here I created simple webpage wit UIkit framework.  
+There are many different frameworks. Maybe at this moment the most popular is Bootstrap and I really like it, but this time I decided to try something different. So here I created simple webpage wit UIkit framework.  
 
 ## Details
 What did I use?
